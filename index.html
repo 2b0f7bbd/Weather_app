@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Weather app</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <div class="container">
+    <div class="header">
+      <h1>WeatherMan</h1>
+      <form class="change-location">
+        <label for="city">Enter a location for weather information</label>
+        <input type="text" name="city" />
+      </form>
+    </div>
+
+    <div class="card hidden">
+      <img src="https://via.placeholder.com/400x300" class="time" />
+      <div class="icon">
+        <img src="" />
+      </div>
+      <div class="details">
+        <div>City name</div>
+        <div>Weather Condition</div>
+        <div class="temp">
+          <span>temp</span>
+          <span>&deg;C</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <body>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
